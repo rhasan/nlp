@@ -1,4 +1,4 @@
-package nlp;
+package nlp.languagemodel;
 
 public interface NgramModel {
 

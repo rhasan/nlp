@@ -1,4 +1,6 @@
-package nlp;
+package nlp.languagemodel;
+
+
 
 public class UnigramModel implements NgramModel {
 
