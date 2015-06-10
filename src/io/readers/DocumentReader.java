@@ -1,4 +1,4 @@
-package io.reader;
+package io.readers;
 
 
 import io.storage.KeyValueStorage;

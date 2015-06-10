@@ -1,4 +1,4 @@
-package io.reader;
+package io.readers;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 import nlp.utils.TextProcessingUtils;
 import io.storage.KeyValueStorage;
+
 
 public class LocalPlainTextReader implements DocumentReader {
 
@@ -21,8 +22,7 @@ public class LocalPlainTextReader implements DocumentReader {
 	public void countSentenceNgrams(String pSentence, int pN) {
 		
 	}
-	
-	@Override
+
 	public void computeNgrams(int pN) throws Exception {
 
 		
@@ -31,7 +31,7 @@ public class LocalPlainTextReader implements DocumentReader {
 
 		String line;
 
-		while ((line = br.readLine()) != null)   {
+		while ((line = br.readLine()) != null) {
 		  if(TextProcessingUtils.isInsignificant(line)==false) {
 			  System.out.println(line);
 		  }
@@ -41,13 +41,12 @@ public class LocalPlainTextReader implements DocumentReader {
 	}
 
 	//getters and setters 
-	@Override
 	public KeyValueStorage getStorage() {
 		
 		return mStorage;
 	}
 
-	@Override
+
 	public void setStorage(KeyValueStorage pStorage) {
 		this.mStorage = pStorage;
 	}

@@ -1,7 +1,7 @@
 package experiments;
 
-import io.reader.DocumentReader;
-import io.reader.LocalPlainTextReader;
+import io.readers.DocumentReader;
+import io.readers.LocalPlainTextReader;
 import io.storage.KeyValueStorage;
 import io.storage.LocalFileStorage;
 
