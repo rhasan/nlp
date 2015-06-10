@@ -1,4 +1,4 @@
-package io;
+package io.reader;
 
 public interface DocumentReader {
 
