@@ -1,5 +1,10 @@
 package io.reader;
 
-public interface DocumentReader {
+import io.storage.KeyValueStorage;
 
+public interface DocumentReader {
+	
+	public KeyValueStorage getStorage();
+	public void setStorage(KeyValueStorage pStorage);
+	
 }
